@@ -34,10 +34,10 @@ export default function Menu({ links }: TProps) {
         )}
       </div>
       <div
-        className={`${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"} bg-black/50 fixed inset-0 top-30 duration-500`}
+        className={`${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"} bg-black/50 fixed inset-0 top-25 duration-500`}
       />
       <div
-        className={`sm:hidden fixed inset-0 ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 pointer-events-none -translate-y-full"} top-30 duration-500 `}
+        className={`sm:hidden fixed inset-0 ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 pointer-events-none -translate-y-full"} top-25 duration-500 `}
       >
         <div className="bg-Black px-6 py-12">
           <ul className="flex flex-col gap-8">
