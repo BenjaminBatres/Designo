@@ -23,9 +23,9 @@ export default function Menu({ links }: TProps) {
     } else {
       document.body.style.overflow = "";
     }
-  }, []);
+  }, [isOpen]);
   return (
-    <div className="sm:hidden">
+    <div className="sm:hidden z-50">
       <div onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
         {isOpen ? (
           <Image src={CloseIcon} alt="" />
@@ -39,7 +39,7 @@ export default function Menu({ links }: TProps) {
       <div
         className={`sm:hidden fixed inset-0 ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 pointer-events-none -translate-y-full"} top-25 duration-500 `}
       >
-        <div className="bg-Black px-6 py-12">
+        <div className="bg-Black px-5 py-12">
           <ul className="flex flex-col gap-8">
             {links.map((link, id) => (
               <li key={id}>

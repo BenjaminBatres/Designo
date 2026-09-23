@@ -18,7 +18,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <nav className="max-w-7xl mx-auto flex justify-between items-center h-25 px-6">
+    <nav className="max-w-277.75 mx-auto flex justify-between items-center h-25 px-5">
       <Link href={"/"}>
         <Image src={Logo} alt="logo" loading="eager" className="h-6 w-full" />
       </Link>
