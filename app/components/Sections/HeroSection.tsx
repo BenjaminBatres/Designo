@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="sm:pt-6 pb-20 sm:px-8">
       <div className="max-w-277.75 mx-auto px-4 sm:px-0 bg-Peach flex flex-col items-center pt-20 relative h-210.75 lg:h-160 overflow-hidden sm:rounded-2xl">
-        <div className="lg:absolute top-[22%] left-[8%] flex flex-col items-center gap-6 sm:gap-8 max-w-135 z-10">
+        <div className="lg:absolute top-[22%] left-[8%] flex flex-col items-center lg:items-start gap-6 sm:gap-8 max-w-135 z-10">
           <h1 className="text-white text-[32px] sm:text-5xl/12 font-medium text-center lg:text-left">
             Award-winning custom designs and digital branding solutions
           </h1>
