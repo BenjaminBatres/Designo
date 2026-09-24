@@ -25,7 +25,7 @@ export default function FeaturesSection() {
     },
   ];
   return (
-    <section className="pt-10 pb-20 lg:py-20 px-7.5 relative overflow-hidden">
+    <section className="pt-10 pb-20 lg:py-20 px-7.5 relative overflow-hidden lg:overflow-visible">
       <Image
         src={Leaf}
         alt=""
