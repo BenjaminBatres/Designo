@@ -9,13 +9,13 @@ export default function CTASection() {
         <Image
           src={PatternCTA}
           alt=""
-          className="absolute scale-205 top-20 right-0 "
+          className="absolute scale-205 sm:scale-150 lg:scale-100 sm:top-0 lg:-top-40 right-0"
         />
         <div className="lg:w-1/2 space-y-4">
-          <h2 className="text-[40px]/10 text-white font-medium text-center lg:text-left">
+          <h2 className="text-[40px]/10 text-white font-medium text-center lg:text-left max-w-xs mx-auto">
             Let’s talk about your project
           </h2>
-          <p className="text-white text-center lg:text-left">
+          <p className="text-white text-center lg:text-left max-w-md mx-auto">
             Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow.
           </p>
