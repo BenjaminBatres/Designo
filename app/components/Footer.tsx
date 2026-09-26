@@ -87,7 +87,15 @@ export default function Footer() {
             </div>
             <div className="flex gap-4">
               {socials.map((social, id) => (
-                <Image key={id} src={social} alt="" />
+                <Image
+                  key={id}
+                  loading="eager"
+                  src={social}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="w-auto h-auto"
+                />
               ))}
             </div>
           </div>
