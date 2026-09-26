@@ -12,7 +12,7 @@ export default function CTASection() {
           className="absolute scale-205 sm:scale-150 lg:scale-100 sm:top-0 lg:-top-40 right-0"
         />
         <div className="lg:w-1/2 space-y-4">
-          <h2 className="text-[40px]/10 text-white font-medium text-center lg:text-left max-w-xs mx-auto">
+          <h2 className="text-[40px]/10 text-white font-medium text-center lg:text-left max-w-xs mx-auto lg:mx-0">
             Let’s talk about your project
           </h2>
           <p className="text-white text-center lg:text-left max-w-md mx-auto">
@@ -23,7 +23,7 @@ export default function CTASection() {
         <div className="lg:w-1/5 z-10">
           <Link
             href={"about"}
-            className="px-5 py-4 bg-white uppercase rounded-lg font-medium tracking-[1px] text-[15px]"
+            className="px-5 py-4 bg-white uppercase rounded-lg font-medium tracking-[1px] text-[15px] hover:bg-Light-Peach/90 hover:text-white duration-300"
           >
             Get in touch
           </Link>
