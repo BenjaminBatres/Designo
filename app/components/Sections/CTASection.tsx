@@ -15,7 +15,7 @@ export default function CTASection() {
           <h2 className="text-[40px]/10 text-white font-medium text-center lg:text-left max-w-xs mx-auto lg:mx-0">
             Let’s talk about your project
           </h2>
-          <p className="text-white text-center lg:text-left max-w-md mx-auto">
+          <p className="text-white text-center lg:text-left max-w-md mx-auto lg:mx-0">
             Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow.
           </p>
