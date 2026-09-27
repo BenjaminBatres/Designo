@@ -4,9 +4,10 @@ interface TProp {
   banner: string;
   title: string;
   desc: string;
+  bannerClassName: string
 }
 
-export default function HeroBanner({ banner, title, desc }: TProp) {
+export default function HeroBanner({ banner, title, desc, bannerClassName }: TProp) {
   return (
     <div className="sm:pt-8 pb-10 sm:pb-16 lg:pb-20 sm:px-7.5">
       <div className="max-w-277.75 mx-auto py-30 px-7.5 sm:px-0 sm:py-18 bg-Peach sm:rounded-2xl flex flex-col gap-6 items-center text-white relative overflow-hidden">
@@ -14,7 +15,7 @@ export default function HeroBanner({ banner, title, desc }: TProp) {
           src={banner}
           alt=""
           loading="eager"
-          className="hidden sm:block absolute sm:-top-40 right-0"
+          className={`hidden sm:block absolute ${bannerClassName}`}
         />
         <Image
           src={Pattern}
