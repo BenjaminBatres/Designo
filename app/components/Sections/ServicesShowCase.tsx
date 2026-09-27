@@ -1,5 +1,6 @@
 "use client";
 import WebDesignImage from "../../assets/home/desktop/image-web-design-large.jpg";
+import webDesignImageSmall from "../../assets/home/desktop/image-web-design-small.jpg";
 import WebDesignImageTablet from "../../assets/home/tablet/image-web-design.jpg";
 import WebDesignImageMobile from "../../assets/home/mobile/image-web-design.jpg";
 import AppDesignImageDesktop from "../../assets/home/desktop/image-app-design.jpg";
@@ -15,6 +16,7 @@ export default function ServicesShowCase() {
   const services = [
     {
       imageDesktop: WebDesignImage,
+      imageSmall: webDesignImageSmall,
       imageTablet: WebDesignImageTablet,
       imageMobile: WebDesignImageMobile,
       title: "Web Design",
@@ -45,7 +47,9 @@ export default function ServicesShowCase() {
     <section
       className={`${pathname !== "/" ? "pt-25 pb-30 lg:py-20 px-7.5" : "pt-15 pb-20 lg:py-20 px-7.5"}`}
     >
-      <div className="max-w-277.75 mx-auto grid lg:grid-cols-2 gap-x-7.5 gap-y-6">
+      <div
+        className={`max-w-277.75 mx-auto grid lg:grid-cols-2 gap-x-7.5 ${pathname !== "/" ? "gap-y-0" : "gap-y-6"}`}
+      >
         {services
           .filter((service) => service.path !== pathname)
           .map((service, id) => (
@@ -58,6 +62,7 @@ export default function ServicesShowCase() {
               path={service.path}
               span={service.span}
               title={service.title}
+              imageSmall={service.imageSmall}
             />
           ))}
       </div>

@@ -1,29 +1,46 @@
-
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import RightArrow from "../../assets/shared/desktop/icon-right-arrow.svg"
-
+import RightArrow from "../../assets/shared/desktop/icon-right-arrow.svg";
 interface Services {
-    path: string
-    title: string
-    imageDesktop: StaticImageData
-    imageTablet: StaticImageData
-    imageMobile: StaticImageData
-    backgroundColor: string
-    span: string
+  path: string;
+  title: string;
+  imageDesktop: StaticImageData;
+  imageTablet: StaticImageData;
+  imageMobile: StaticImageData;
+  imageSmall?: StaticImageData;
+  backgroundColor: string;
+  span: string;
 }
-export default function Service({backgroundColor, imageDesktop, imageMobile, imageTablet, path, span, title}:Services) {
-    return (
+export default function Service({
+  imageSmall,
+  imageDesktop,
+  imageMobile,
+  imageTablet,
+  path,
+  span,
+  title,
+}: Services) {
+  return (
     <Link
       href={path}
       className={`relative rounded-2xl overflow-hidden group ${span}`}
     >
-      <Image
-        src={imageDesktop}
-        alt=""
-        loading="eager"
-        className="w-full hidden lg:block"
-      />
+      {imageSmall ? (
+        <Image
+          src={imageSmall}
+          alt=""
+          loading="eager"
+          className="w-full h-full hidden lg:block"
+        />
+      ) : (
+        <Image
+          src={imageDesktop}
+          alt=""
+          loading="eager"
+          className="w-full h-full hidden lg:block"
+        />
+      )}
+
       <Image
         src={imageTablet}
         alt=""
@@ -34,7 +51,7 @@ export default function Service({backgroundColor, imageDesktop, imageMobile, ima
         src={imageMobile}
         alt=""
         loading="eager"
-        className="w-full sm:hidden h-62 object-cover"
+        className="w-full sm:hidden object-cover"
       />
       <div
         className={`absolute inset-0 bg-Dark-Grey/50 hover:bg-Peach/80 flex flex-col items-center justify-center gap-3 sm:gap-6 duration-300`}
