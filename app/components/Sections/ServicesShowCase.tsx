@@ -48,7 +48,7 @@ export default function ServicesShowCase() {
       className={`${pathname !== "/" ? "pt-25 pb-30 lg:py-20 px-7.5" : "pt-15 pb-20 lg:py-20 px-7.5"}`}
     >
       <div
-        className={`max-w-277.75 mx-auto grid lg:grid-cols-2 gap-x-7.5 ${pathname !== "/" ? "gap-y-0" : "gap-y-6"}`}
+        className={`max-w-277.75 mx-auto grid lg:grid-cols-2 gap-x-7.5 ${pathname !== "/" ? "gap-y-6 lg:gap-y-0" : "gap-y-6"}`}
       >
         {services
           .filter((service) => service.path !== pathname)
