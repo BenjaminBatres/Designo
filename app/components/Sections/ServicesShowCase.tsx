@@ -22,7 +22,6 @@ export default function ServicesShowCase() {
       title: "Web Design",
       path: "/web-design",
       span: "row-span-2",
-      backgroundColor: "bg-Black/60 lg:bg-Peach/80",
     },
     {
       imageDesktop: AppDesignImageDesktop,
@@ -31,7 +30,6 @@ export default function ServicesShowCase() {
       title: "App Design",
       path: "/app-design",
       span: "row-span-1",
-      backgroundColor: "bg-Black/60",
     },
     {
       imageDesktop: GraphicDesignImageDesktop,
@@ -40,7 +38,6 @@ export default function ServicesShowCase() {
       title: "Graphic Design",
       path: "/graphic-design",
       span: "row-span-1",
-      backgroundColor: "bg-Black/60",
     },
   ];
   return (
@@ -55,7 +52,6 @@ export default function ServicesShowCase() {
           .map((service, id) => (
             <Service
               key={id}
-              backgroundColor={service.backgroundColor}
               imageDesktop={service.imageDesktop}
               imageMobile={service.imageMobile}
               imageTablet={service.imageTablet}
@@ -63,6 +59,7 @@ export default function ServicesShowCase() {
               span={service.span}
               title={service.title}
               imageSmall={service.imageSmall}
+              pathname={pathname}
             />
           ))}
       </div>

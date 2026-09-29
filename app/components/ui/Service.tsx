@@ -8,8 +8,8 @@ interface Services {
   imageTablet: StaticImageData;
   imageMobile: StaticImageData;
   imageSmall?: StaticImageData;
-  backgroundColor: string;
   span: string;
+  pathname: string;
 }
 export default function Service({
   imageSmall,
@@ -19,26 +19,38 @@ export default function Service({
   path,
   span,
   title,
+  pathname,
 }: Services) {
   return (
     <Link
       href={path}
       className={`relative rounded-2xl overflow-hidden group ${span}`}
     >
-      {imageSmall ? (
-        <Image
-          src={imageSmall}
-          alt=""
-          loading="eager"
-          className="w-full h-full hidden lg:block"
-        />
-      ) : (
+      {pathname === "/" ? (
         <Image
           src={imageDesktop}
           alt=""
           loading="eager"
           className="w-full h-full hidden lg:block"
         />
+      ) : (
+        <>
+          {imageSmall ? (
+            <Image
+              src={imageSmall}
+              alt=""
+              loading="eager"
+              className="w-full h-full hidden lg:block"
+            />
+          ) : (
+            <Image
+              src={imageDesktop}
+              alt=""
+              loading="eager"
+              className="w-full h-full hidden lg:block"
+            />
+          )}
+        </>
       )}
 
       <Image
