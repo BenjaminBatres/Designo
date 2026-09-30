@@ -23,10 +23,10 @@ export default function HeroSection() {
           </Link>
         </div>
         {/* Hero Home Image */}
-        <Image src={HeroHome} alt="" className="absolute -right-10 sm:right-0" />
+        <Image src={HeroHome} alt="" loading="eager" className="absolute -right-10 sm:right-0" />
         
         <div className="absolute top-[53%] xs:top-[35%] lg:-top-10 lg:-right-15 scale-150 xs:scale-100">
-          <Image src={HeroPhone} alt="" className="" />
+          <Image src={HeroPhone} alt="" loading="eager" className="" />
         </div>
       </div>
     </section>
