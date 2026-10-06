@@ -20,6 +20,9 @@ export default function Menu({ links }: TProps) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      window.scrollTo({
+        top:0,
+      })
     } else {
       document.body.style.overflow = "";
     }
