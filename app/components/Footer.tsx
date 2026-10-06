@@ -79,7 +79,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col items-center sm:items-start gap-2">
                 {contacts.map((contact, id) => (
-                  <p key={id} className="text-white/50 font-bold">
+                  <p key={id} className="text-white/50 nth-1:font-bold sm:font-bold">
                     {contact}
                   </p>
                 ))}
