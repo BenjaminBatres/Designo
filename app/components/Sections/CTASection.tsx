@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function CTASection() {
   return (
-    <div className="max-w-277.75 mx-auto absolute left-1/2 -top-5 lg:top-10 -translate-x-1/2 w-full px-7.5 xl:px-0">
+    <div className="max-w-277.75 mx-auto absolute left-1/2 -top-5 lg:top-10 -translate-x-1/2 w-full px-5 sm:px-7.5 xl:px-0">
       <div className="py-20 px-7.5 lg:p-20 bg-Peach rounded-2xl flex flex-col lg:flex-row gap-y-10 justify-between items-center relative overflow-hidden">
         <Image
           src={PatternCTA}
