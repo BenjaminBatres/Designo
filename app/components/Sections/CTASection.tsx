@@ -22,7 +22,7 @@ export default function CTASection() {
         </div>
         <div className="lg:w-1/5 z-10">
           <Link
-            href={"about"}
+            href={"/about"}
             className="px-5 py-4 bg-white uppercase rounded-lg font-medium tracking-[1px] text-[15px] hover:bg-Light-Peach/90 hover:text-white duration-300"
           >
             Get in touch
