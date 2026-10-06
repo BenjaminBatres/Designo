@@ -10,7 +10,7 @@ export default function WorldTalentSection() {
         <Image src={pattern} alt="" className="hidden sm:block absolute left-20 top-87 opacity-30"/>
         <Image src={WorldClass} alt="" className="hidden lg:block z-10"/>
         <Image src={WorldClassTablet} alt="" className="z-10 w-full hidden sm:block lg:hidden"/>
-        <Image src={WorldClassMobile} alt="" className="z-10 w-full lg:hidden"/>
+        <Image src={WorldClassMobile} alt="" className="z-10 w-full sm:hidden"/>
         <div className="px-5 sm:px-20 py-20 lg:py-0 bg-[#f7edea] flex flex-col items-center lg:items-start justify-center gap-6">
           <h2 className="text-[40px]/12 text-Peach font-medium">World-class talent</h2>
           <div className="space-y-5">
