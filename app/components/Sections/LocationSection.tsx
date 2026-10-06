@@ -27,7 +27,7 @@ export default function LocationSection() {
         {locations.map((location, id) => (
           <div key={id} className="flex flex-col items-center gap-12">
             <figure
-              className={`${location.gradient} to-[#5D0202]/0 from-[#5D0202]/10 rounded-full sm:w-1/2`}
+              className={`${location.gradient} to-[#5D0202]/0 from-[#5D0202]/10 rounded-full lg:w-1/2`}
             >
               <Image src={location.image} alt="" />
             </figure>
