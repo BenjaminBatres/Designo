@@ -29,7 +29,8 @@ export default function ProjectsSections({ projects }: TProps) {
               src={project.image}
               alt=""
               loading="eager"
-              className="lg:rounded-t-2xl"
+              width={500}
+              className="lg:rounded-t-2xl "
             />
             <div className="flex flex-col items-center p-8 gap-2">
               <h2 className="text-xl text-Peach font-medium tracking-[5px] uppercase">
