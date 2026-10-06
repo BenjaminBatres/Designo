@@ -16,7 +16,7 @@ export default function HeroSection() {
             experiences. Find out more about our services.
           </p>
           <Link
-            href={"/"}
+            href={"/about"}
             className="px-8 py-4 bg-white text-[15px] font-medium uppercase rounded-lg inline-block sm:mt-2"
           >
             Learn more

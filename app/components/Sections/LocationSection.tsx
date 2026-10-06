@@ -36,7 +36,7 @@ export default function LocationSection() {
                 {location.title}
               </h2>
               <Link
-                href={"/location"}
+                href={"/locations"}
                 className="bg-Peach px-5 py-3 rounded-lg text-white uppercase text-[15px] hover:bg-Peach/70 duration-300"
               >
                 See location
