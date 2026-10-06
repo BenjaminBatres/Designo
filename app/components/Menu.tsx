@@ -21,8 +21,8 @@ export default function Menu({ links }: TProps) {
     if (isOpen) {
       document.body.style.overflow = "hidden";
       window.scrollTo({
-        top:0,
-      })
+        top: 0,
+      });
     } else {
       document.body.style.overflow = "";
     }
