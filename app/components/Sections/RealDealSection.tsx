@@ -1,12 +1,13 @@
 import Image from "next/image";
 import RealDeal from "../../assets/about/desktop/image-real-deal.jpg";
 import RealDealTablet from "../../assets/about/tablet/image-real-deal.jpg";
+import RealDealMobile from "../../assets/about/mobile/image-real-deal.jpg";
 import Pattern1 from  "../../assets/shared/desktop/bg-pattern-two-circles.svg"
 import Pattern2 from  "../../assets/shared/desktop/bg-pattern-three-circles.svg"
 export default function RealDealSection() {
   return (
     <section className="pt-20 pb-35 sm:py-20 sm:px-7.5">
-      <div className="max-w-277.75 mx-auto flex flex-col-reverse lg:flex-row rounded-2xl overflow-hidden">
+      <div className="max-w-277.75 mx-auto flex flex-col-reverse lg:flex-row sm:rounded-2xl overflow-hidden">
         <div className="bg-[#f7edea] flex flex-col items-center lg:items-start justify-center px-5 sm:px-20 py-20 gap-6 relative">
             <Image src={Pattern1} alt="" className="hidden lg:block absolute bottom-0 left-0"/>
             <Image src={Pattern2} alt="" className="lg:hidden absolute sm:bottom-10 right-0"/>
@@ -25,7 +26,8 @@ export default function RealDealSection() {
           </p>
         </div>
         <Image src={RealDeal} alt="" loading="eager" className="hidden lg:block"/>
-        <Image src={RealDealTablet} alt="" loading="eager" className="lg:hidden w-full"/>
+        <Image src={RealDealTablet} alt="" loading="eager" className="hidden sm:block lg:hidden w-full"/>
+        <Image src={RealDealMobile} alt="" loading="eager" className="sm:hidden w-full"/>
       </div>
     </section>
   );
