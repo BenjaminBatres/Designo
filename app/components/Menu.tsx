@@ -44,6 +44,7 @@ export default function Menu({ links }: TProps) {
             {links.map((link, id) => (
               <li key={id}>
                 <Link
+                  onClick={() => setIsOpen(false)}
                   href={link.path}
                   className="uppercase text-2xl tracking-[2px] text-white"
                 >
