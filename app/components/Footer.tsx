@@ -44,7 +44,7 @@ export default function Footer() {
   return (
     <section className="pt-60 relative">
       <CTASection />
-      <footer className="pt-50 sm:pt-45 pb-15 px-7.5 bg-Black">
+      <footer className="pt-65 sm:pt-45 pb-15 px-7.5 bg-Black">
         <div className="max-w-277.75 mx-auto space-y-8">
           <div className="flex flex-col items-center sm:flex-row justify-between sm:border-b border-white/10 sm:pb-12 gap-10 flex-wrap">
             <Link href={"/"}>
